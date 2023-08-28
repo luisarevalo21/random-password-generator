@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <main class="main">
+      <div class="main-header">
+        <h1 class="main-header-title">Generate a <span class="green">random password</span></h1>
+        <p class="main-subheader">Never use an insecure password again.</p>
+
+        <div class="input-container">
+          <button onclick="generatePassword()" class="generate-password">Generate Passwords</button>
+          <input
+            id="password-length"
+            placeholder="Enter password length"
+            type="number"
+            min="1"
+            class="password-length"
+          />
+
+          <div class="input-toggler">
+            <div>
+              <label for="symbols">Toggle Symbols</label>
+              <input id="toggle-symbols" type="checkbox" onclick="toggleCheckBox('symbols')" />
+            </div>
+
+            <div>
+              <label for="numbers">Toggle Numbers</label>
+              <input id="toggle-numbers" type="checkbox" onclick="toggleCheckBox('numbers')" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="passwords-container">
+        <button class="btn" id="password-one" onclick="copyToClipboard('one')"></button>
+        <button class="btn" id="password-two" onclick="copyToClipboard('two')"></button>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+:root {
+  --darkBlue: #1f2937;
+  --white: #fff;
+  --brightGreen: #4adf86;
+  --brighterGreen: #55f991;
+  --darkGreen: #10b981;
+  --darkBackground: #273549;
+  --gray: #d5d4d8;
+}
+
+body {
+  background: #1c1c1c;
+}
+
+.main {
+  width: 80%;
+  color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: 20px auto;
+  height: auto;
+  padding: 40px;
+  background-color: var(--darkBlue);
+}
+
+.main-header {
+  font-size: 1.4rem;
+  text-align: left;
+  border-bottom: 3px dotted #2f3e53;
+  margin: 15px;
+  /* padding: 20px; */
+  /* width: 40%; */
+}
+
+.main-header-title {
+  margin: 0;
+}
+.main-subheader {
+  color: var(--gray);
+  margin-top: 10px;
+}
+
+.green {
+  color: var(--brightGreen);
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.generate-password {
+  padding: 10px;
+  color: var(--white);
+  background: var(--darkGreen);
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+.password-length {
+  margin-left: 10px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  text-align: left;
+  padding: 5px 10px;
+}
+
+.passwords-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border-radius: 5px;
+  min-width: 311px;
+  /* width: 50%; */
+  /* text-align: left; */
+  /* padding: 20px; */
+  padding: 15px 25px;
+  margin: 10px 15px;
+  border: none;
+  color: var(--brightGreen);
+  background: #273549;
+  /* line-height: 12px; */
+  font-size: 18px;
+  min-height: 32px;
+  letter-spacing: 1.2px;
+  word-wrap: break-word;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.input-toggler {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  justify-content: center;
+  font-size: 1.2rem;
+  text-align: left;
+}
