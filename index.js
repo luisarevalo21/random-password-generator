@@ -132,17 +132,12 @@ let inputPasswordLength = document.getElementById("password-length");
 let isSymbolsChecked = false;
 let isNumbersChecked = false;
 
-console.log(" input password length", inputPasswordLength);
+// console.log(" input password length", inputPasswordLengh);
 function generatePassword() {
   let charactersArray = checkIsToggled();
-
-  console.log(charactersArray);
-
   let passwordLength = inputPasswordLength.value === "" ? 18 : inputPasswordLength.value;
-
   let length = charactersArray.length;
 
-  console.log("char", charactersArray);
   passwordOne.textContent = "";
   passwordTwo.textContent = "";
   for (let i = 0; i < passwordLength; i++) {
@@ -178,7 +173,8 @@ function checkIsToggled() {
     });
   } else if (isSymbolsChecked) {
     return characters.filter(char => {
-      return !characters.includes(char);
+      return !symbols.includes(char);
     });
   }
+  return characters;
 }
